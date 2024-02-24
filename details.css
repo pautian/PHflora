@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+root{
+   --pink:#e84393;
+}
+
+.list{
+   display: block;
+   text-align: center;
+   margin: auto;
+}
+
+
+
+*{
+   margin:0; padding:0;
+   box-sizing: border-box;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: none;
+   transition: .2s linear;
+}
+
+html{
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6rem;
+   overflow-x: hidden;
+}
+
+section{
+   padding:3rem 10%;
+}
+
+.heading{
+   position: absolute;
+   text-align: center;
+   font-size: 4rem;
+   color:#333;
+   padding:1rem;
+   margin:2rem 0;
+   background:#e9face;
+   
+}
+
+.heading span{
+   color:var(--pink);
+}
+
+
+
+
+
+
+.btn{
+   display: inline-block;
+   margin-top: 1rem;
+   border-radius: 5rem;
+   background:#333;
+   color:#fff;
+   padding:.9rem 3.5rem;
+   cursor: pointer;
+   font-size: 1.7rem;
+}
+
+.btn:hover{
+   background:black;
+}
+
+header{
+   position: fixed;
+   top:0; left:0; right:0;
+   background:#fff;
+   padding:1rem 4%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 1000;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+   font-size: 3rem;
+   color:#333;
+   font-weight: bolder;
+}
+
+header .logo span{
+   color:var(--pink);
+}
+
+header .navbar a{
+   font-size: 1.7rem;
+   padding:0 1.5rem;
+   margin-left: 1.5rem;
+   margin-right: 1.5rem;
+   color:#666;
+}
+
+header .navbar a:hover{
+   color:var(--pink);
+}
+
+header .icons a{
+   font-size: 2.5rem;
+   color:#333;
+   margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+   color:var(--pink);
+}
+
+header #toggler{
+   display: none;
+}
+
+header .fa-bars{
+   font-size: 3rem;
+   color:#333;
+   border-radius: .5rem;
+   padding:.5rem 1.5rem;
+   cursor: pointer;
+   border:.1rem solid rgba(0,0,0,.3);
+   display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+img{
+    width: 100%;
+    display: block;
+}
+.main-wrapper{
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+.product-div{
+    margin: 1rem 0;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    border-radius: 3px;
+    column-gap: 10px;
+}
+.product-div-left{
+    padding: 20px;
+}
+.product-div-right{
+    padding: 20px;
+}
+.img-container img{
+    width: 200px;
+    margin: 0 auto;
+}
+.hover-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+.hover-container div{
+    border: 2px solid rgba(55, 161, 78, 0.7);
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 0 4px 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    border-color: #698269!important;
+}
+.hover-container div:hover{
+    border-color: #698269
+}
+.hover-container div img{
+    width: 50px;
+    cursor: pointer;
+}
+.product-div-right span{
+    display: block;
+    color:#557153
+}
+
+.product-div-right h3{
+    display: block;
+    color: #224B0C;
+}
+
+.product-name{
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+.product-price{
+    font-weight: 100;   
+    font-size: 22px;
+    opacity: 1.9;
+    font-weight: 400;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-rating span{
+    margin-right: 6px;
+    font-size: 20px;
+}
+
+
+.product-rating-two{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+.product-rating-two span{
+    margin-right: 6px;
+    font-size: 20px;
+}
+
+
+.product-description{
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
+    opacity: 3.9;
+    margin-top: 30px;
+}
+
+.btn-groups{
+    margin-top: 22px;
+}
+.btn-groups button{
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding: 15px 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-groups button .fas{
+    margin-right: 8px;
+}
+
+
+@media screen and (max-width: 992px){
+    .product-div{
+        grid-template-columns: 100%;
+    }
+    .product-div-right{
+        text-align: center;
+    }
+    .product-rating{
+        justify-content: center;
+    }
+    .product-description{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btn-groups button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
